@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000; /* Black background */
+  color: #fff; /* White text for contrast */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+  width: 120px;
+  margin: 20px auto;
+  display: block;
+}
+
+.hero {
+  text-align: center;
+  color: #ff69b4; /* Neon pink */
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+}
+
+.hero-content h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-content .tagline {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #fff; /* White text for contrast */
+  text-shadow: 0 0 10px #ff69b4; /* Neon glow effect */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+.form-section {
+  background: rgba(255, 255, 255, 0.1); /* Transparent form background */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 105, 180, 0.5); /* Neon pink shadow */
+}
+
+input, button {
+  width: 90%;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #ff69b4; /* Neon pink */
+  color: #000;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff1493; /* Darker neon pink */
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn.insta {
+  background: #e1306c; /* Instagram pink */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn.insta:hover {
+  background: #c13584; /* Darker Instagram pink */
+}
+
+.btn.whatsapp {
+  background: #25d366;
+}
+
+.gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery h2 {
+  color: #ff69b4;
+  margin-bottom: 20px;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery-images img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 105, 180, 0.5); /* Neon pink shadow */
+}
+
+.venue {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 105, 180, 0.5);
+}
+
+.venue h2 {
+  color: #ff69b4;
+  margin-bottom: 10px;
+}
+
+.contact {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 105, 180, 0.5); /* Neon pink shadow */
+}
+
+.contact h2 {
+  color: #ff69b4;
+  margin-bottom: 10px;
+}
+
+.invitation, .pricing, .rooms {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 105, 180, 0.5); /* Neon pink shadow */
+}
+
+.invitation h2, .pricing h2, .rooms h2 {
+  color: #ff69b4;
+  margin-bottom: 10px;
+}
+
+.invitation p, .rooms p {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.invitation form input, .invitation form button {
+  width: 90%;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.invitation form button {
+  background-color: #ff69b4; /* Neon pink */
+  color: #000;
+  cursor: pointer;
+}
+
+.invitation form button:hover {
+  background-color: #ff1493; /* Darker neon pink */
+}
+
+.pricing ul {
+  list-style: none;
+  padding: 0;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.pricing ul li {
+  margin: 10px 0;
+}
+
+.pricing ul li button {
+  margin-left: 10px;
+  background-color: #ff69b4; /* Neon pink */
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pricing ul li button:hover {
+  background-color: #ff1493; /* Darker neon pink */
+}
+
+.rooms ul {
+  list-style: none;
+  padding: 0;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.rooms ul li {
+  margin: 10px 0;
+}
+
+.rooms ul li strong {
+  color: #ff69b4; /* Highlighted text */
+}
+
+.payment, .confirmation {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 105, 180, 0.5); /* Neon pink shadow */
+}
+
+.payment h2, .confirmation h2 {
+  color: #ff69b4;
+  margin-bottom: 10px;
+}
+
+.payment form input, .payment form button {
+  width: 90%;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.payment form button {
+  background-color: #ff69b4; /* Neon pink */
+  color: #000;
+  cursor: pointer;
+}
+
+.payment form button:hover {
+  background-color: #ff1493; /* Darker neon pink */
+}
+
+.quantity {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 105, 180, 0.5); /* Neon pink shadow */
+}
+
+.quantity h2 {
+  color: #ff69b4;
+  margin-bottom: 10px;
+}
+
+.quantity-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.quantity-selector button {
+  background-color: #ff69b4;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quantity-selector button:hover {
+  background-color: #ff1493;
+}
+
+.quantity-selector span {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #ff69b4;
+}

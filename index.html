@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House of Wave</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>House of Wave</h1>
+    <p class="tagline">Where the Wild Waves Gather</p>
+  </header>
+
+  <!-- Pricing Section -->
+  <section class="pricing">
+    <h2>Select Your Pass</h2>
+    <ul>
+      <li>
+        <strong>Solo Females:</strong> ₹1199/- 
+        <button class="btn select-pass" data-pass="Solo Females" data-price="1199">Select</button>
+      </li>
+      <li>
+        <strong>Solo Males:</strong> ₹1699/- 
+        <button class="btn select-pass" data-pass="Solo Males" data-price="1699">Select</button>
+      </li>
+      <li>
+        <strong>Couples (Male/Female only):</strong> ₹2500/- 
+        <button class="btn select-pass" data-pass="Couples" data-price="2500">Select</button>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Quantity Section -->
+  <section class="quantity hidden" id="quantitySection">
+    <h2>Choose Quantity</h2>
+    <p id="selectedPassName"></p>
+    <div class="quantity-selector">
+      <button id="decreaseQuantity">-</button>
+      <span id="quantity">1</span>
+      <button id="increaseQuantity">+</button>
+    </div>
+    <button id="proceedToPayment" class="btn">Proceed to Payment</button>
+  </section>
+
+  <!-- Payment Section -->
+  <section class="payment hidden" id="paymentSection">
+    <h2>Complete Your Payment</h2>
+    <form id="paymentForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="tel" id="phone" placeholder="WhatsApp Number" required />
+      <input type="hidden" id="selectedPass" />
+      <input type="hidden" id="selectedPrice" />
+      <input type="hidden" id="selectedQuantity" />
+      <button type="submit">Pay with Razorpay</button>
+    </form>
+  </section>
+
+  <!-- Confirmation Section -->
+  <section class="confirmation hidden" id="confirmationSection">
+    <h2>You're In!</h2>
+    <p>Thank you for your payment! Join our exclusive groups below:</p>
+    <a href="https://www.instagram.com/houseofwave.official" target="_blank" class="btn insta">Join Instagram Group</a>
+    <a href="https://wa.me/1234567890?text=Hey%2C%20I%20joined%20House%20of%20Wave!" target="_blank" class="btn whatsapp">Join WhatsApp Group</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 House of Wave. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
